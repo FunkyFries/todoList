@@ -6,15 +6,18 @@
     <title>Todo List</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="C:\Users\Ryan\Documents\html class\todoList\assets\css\todos.css" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
+        crossorigin="anonymous">
 </head>
 <body>
 <div id="container">
-    <h1>To-Do List</h1>
-    <input type="text">
+    <h1>To-Do List<i class="fas fa-plus"></i></h1>
+    <input type="text" placeholder="Add New Todo">
     <ul>
-        <li id="1">Go To Potions Class <span>X</span></li>
-        <li id="2">Buy New Robes <span>X</span></li>
-        <li id="3">Visit Hagrid <span>X</span></li>
+        <li class="todoItem">Go To Potions Class <span class="deleteButton"><i class="fas fa-trash"></i></span></li>
+        <li class="todoItem">Buy New Robes <span class="deleteButton"><i class="fas fa-trash"></i></span></li>
+        <li class="todoItem">Visit Hagrid <span class="deleteButton"><i class="fas fa-trash"></i></span></li>
     </ul>
 </div>
 

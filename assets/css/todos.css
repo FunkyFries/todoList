@@ -1,10 +1,90 @@
+body {
+    font-family: Roboto;
+    background: #4DA0B0;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #D39D38, #4DA0B0);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #D39D38, #4DA0B0); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+li {
+    background-color: rgb(255, 255, 255);
+    height: 40px;
+    line-height: 40px;
+    color: rgb(102, 102, 102);
+}
+
+li:nth-child(2n){
+    background-color: rgb(247, 247, 247);
+}
+
+input {
+    font-size: 18px;
+    color: rgb(41, 128, 185);
+    background-color: rgb(247, 247, 247);
+    width: 100%;
+    padding: 13px 13px 13px 20px;
+    box-sizing: border-box;
+}
+
+input:focus {
+    background-color: rgb(255, 255, 255);
+    border: 3px solid rgb(41, 128, 185);
+    outline: none;
+}
+
 #container {
-    border: 2px solid gray;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
     width: 360px;
-    margin: 0 auto;
+    margin: 100px auto;
+    background-color: rgb(247, 247, 247);
 }
 
 .strikethrough {
     text-decoration: line-through;
-    color: gray;
+    color: rgb(128, 128, 128);
 }
+
+.fa-plus {
+    float: right;
+}
+
+span {
+    background-color: rgb(231, 76, 76);
+    height: 40px;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    display: none;
+    width: 40px;
+    float: right;
+}
+
+li:hover span {
+    display: block;
+}
+
+h1 {
+    background-color: rgb(41, 128, 185);
+    color: rgb(255, 255, 255);
+    margin: 0;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    font-size: 24px;
+    font-weight: normal;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+/* @keyframes fadeOut {
+   0% {opacity: 1;}
+   100% {opacity: 0;} 
+} 
+
+.fadeOut {
+    -webkit-animation-name: fadeOut;
+    animation-name: fadeOut;
+    -webkit-animation-duration: 2s;
+    animation-duration: 2s;
+} */
