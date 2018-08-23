@@ -23,3 +23,8 @@ $("input[type='text']").keypress(function(e){
         $(this).val("");
     }
 });
+
+$("#toggleInputBox").click(function(){
+    $("input[type='text']").fadeToggle();
+    $(this).toggleClass("fa-plus fa-minus")
+});
